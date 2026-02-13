@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>வாலென்டைன்ஸ் அன்பு</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffb6c1, #ff69b4);
+            font-family: 'Helvetica', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        h1 {
+            font-size: 50px;
+            animation: fadeIn 3s;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+            animation: fadeIn 3s;
+            animation-delay: 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: white;
+            color: #ff69b4;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ffb6c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentines Day</h1>
+        <p>என் அன்புக்கு, உன் அருகில் நான் எப்போதும் இருக்கிறேன். இந்த நாளும், நம்முடைய காதல் மலர்ந்த நாள்.</p>
+        <button onclick="showAlert()">கூறுங்கள்</button>
+    </div>
+    <script>
+        function showAlert() {
+            alert("நீங்கள் எனக்கு மிகப் பெரிய அர்த்தம். வாலென்டைன்ஸ் டே வாழ்த்துகள்!");
+        }
+    </script>
+</body>
+</html>
